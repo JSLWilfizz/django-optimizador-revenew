@@ -52,6 +52,7 @@ x_A, x_B ≥ 0 (enteros)
 │   │       └── resultado.html  # Resultados optimizados
 
 ---
+```
 
 ## 🚀 Cómo ejecutar
 
