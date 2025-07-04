@@ -1,11 +1,9 @@
-from pulp import LpMaximize, LpProblem, LpVariable, value
-import pandas as pd
 from optimizador.OptimizationModel import OptimizationModel
 from optimizador.Data_loader import Dataloader
 
 """
     Script de prueba para la lectura y optimización de un problema de maximización de ingresos.
-    
+
 """
 
 if __name__ == "__main__":
