@@ -3,9 +3,8 @@
 Este proyecto implementa una aplicación backend en Django que permite:
 
 ✅ Subir un archivo CSV con parámetros de producción  
-✅ Ejecutar un modelo de optimización lineal entera  
+✅ Ejecutar un modelo de optimización
 ✅ Obtener la combinación óptima de productos A y B que maximiza los ingresos diarios  
-✅ Visualizar los resultados en formato tabla y gráfico  
 ✅ (Opcional) Ejecutar desde un `main.py` sin necesidad de servidor web  
 ✅ (Opcional) Desplegar fácilmente con Docker
 
