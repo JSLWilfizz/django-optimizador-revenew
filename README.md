@@ -36,7 +36,7 @@ x_A, x_B ≥ 0 (enteros)
 
 ```
 .
-├── main.py                      # Ejecuta el optimizador desde consola
+├── main.py                      # Ejecuta el optimizador desde consola y sin Django
 ├── requirements.txt
 ├── Dockerfile
 ├── docker-compose.yml
@@ -45,14 +45,11 @@ x_A, x_B ≥ 0 (enteros)
 ├── optimizador/                # App principal
 │   ├── data_loader.py          # Clase para cargar y validar el CSV
 │   ├── optimizationModel.py     # Clase OptimizationModel con PuLP
-│   ├── presenter.py            # Genera gráficos (matplotlib)
 │   ├── views.py, forms.py, urls.py
 │   ├── templates/
 │   │   └── optimizador/
 │   │       ├── index.html      # Formulario de carga
-│   │       └── resultado.html  # Resultados optimizados + gráfico
-│   └── tests/                  # Pruebas unitarias
-```
+│   │       └── resultado.html  # Resultados optimizados
 
 ---
 
