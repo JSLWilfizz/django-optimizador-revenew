@@ -1,13 +1,15 @@
 import pulp
-from .Data_loader import Dataloader
+from .data_loader import Dataloader
 import pandas as pd
 
 class OptimizationModel:
-    def __init__(self, data):
+    def __init__(self, data = None):
         """
         Inicializa el modelo de optimización con los datos proporcionados.
         
         :param data: DataFrame de pandas que contiene los parámetros del problema de optimización."""
+        if data is None:
+            raise ValueError("Los datos de entrada no pueden ser None. Por favor, proporciona un DataFrame de pandas.")
         self.data = data
 
     def optimize(self):
@@ -67,9 +69,9 @@ class OptimizationModel:
             # Mostrar resultados
             result = {
                 "Estado": pulp.LpStatus[model.status],
-                "x_A": x_A.varValue,
-                "x_B": x_B.varValue,
-                "Ingresos Totales": pulp.value(model.objective)
+                "Producto A": x_A.varValue,
+                "Producto B": x_B.varValue,
+                "Ingreso Total": pulp.value(model.objective)
             }
 
             results.append(result)

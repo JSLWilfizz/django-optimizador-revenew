@@ -12,9 +12,7 @@ class Dataloader:
         except Exception as e:
             if not self.file_path.endswith('.csv'):
                 raise ValueError("El archivo debe ser un CSV.")
-                print(f"Error al cargar el archivo {self.file_path}: {e}")
             else:
-                print(f"Error inesperado al cargar el archivo {self.file_path}: {e}")
-            return None
+                raise ValueError(f"Error inesperado al cargar el archivo {self.file_path}: {e}")
 
         return df

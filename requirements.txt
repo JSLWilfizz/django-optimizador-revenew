@@ -2,5 +2,4 @@ Django>=4.0
 pandas>=1.5
 numpy>=1.21
 matplotlib>=3.5  # opcional, solo si haces visualizaciones
-scipy>=1.8       # si usas scipy.optimize para la optimización
 pulp>=2.7        # o alternativamente, si prefieres usar PuLP
