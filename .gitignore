@@ -1,0 +1,19 @@
+# Entornos virtuales
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Archivos de Django
+*.sqlite3
+*.log
+.env
+
+# Archivos de entorno/datos
+*.csv
+*.xlsx
+
+# Docker
+*.db
+*.pid
