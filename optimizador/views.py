@@ -45,5 +45,4 @@ def index(request):
 
     else:
         form = CSVUploadForm()
-
     return render(request, 'index.html', {'form': form})

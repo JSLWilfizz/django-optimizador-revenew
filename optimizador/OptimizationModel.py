@@ -2,6 +2,8 @@ import pulp
 from .data_loader import Dataloader
 import pandas as pd
 
+
+
 class OptimizationModel:
     def __init__(self, data = None):
         """
@@ -42,6 +44,7 @@ class OptimizationModel:
         # """
         results = []
         for index, row in self.data.iterrows():
+
             self.Price_Product_A = row["Price_Product_A"]
             self.Price_Product_B = row["Price_Product_B"]
             self.Product_A_Production_Time_Machine_1 = row["Product_A_Production_Time_Machine_1"]
